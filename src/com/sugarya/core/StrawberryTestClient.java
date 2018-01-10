@@ -27,7 +27,7 @@ public class StrawberryTestClient {
 
     public static void main(String[] args) {
         Collections.sort(RAW_STRAWBERRY_LIST, (strawberry1, strawberry2) -> strawberry2.getWeight() - strawberry1.getWeight());
-        Out.println("我想吃的最大的草莓 = " + RAW_STRAWBERRY_LIST.get(0).toString());
+        Out.println("我想吃最大的草莓是 = " + RAW_STRAWBERRY_LIST.get(0).toString());
     }
 
 
