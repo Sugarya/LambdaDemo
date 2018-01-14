@@ -36,7 +36,9 @@ public class ClientMethodReference {
      * 实例引用无参方法
      */
     private static void testMRObject() {
-        Arrays.asList(new Strawberry(21), new Strawberry(23)).forEach(Strawberry::displayWeight);
+        Arrays.asList(new Strawberry(21), new Strawberry(23))
+                .forEach(Strawberry::displayWeight);
+
     }
 
     /**

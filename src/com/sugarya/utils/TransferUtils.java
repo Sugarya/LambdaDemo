@@ -3,6 +3,7 @@ package com.sugarya.utils;
 public class TransferUtils {
 
     public static int doubleValue(int value){
+
         return 2 * value;
     }
 

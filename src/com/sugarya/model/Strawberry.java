@@ -4,6 +4,7 @@ public class Strawberry {
 
     private int weight;
     private String color;
+    private int sweetness;
 
     public Strawberry() {
     }
@@ -17,7 +18,13 @@ public class Strawberry {
         this.color = color;
     }
 
-    public int getWeight() {
+    public Strawberry(int weight, String color, int sweetness) {
+        this.weight = weight;
+        this.color = color;
+        this.sweetness = sweetness;
+    }
+
+    public Integer getWeight() {
         return weight;
     }
 
@@ -33,6 +40,14 @@ public class Strawberry {
         this.color = color;
     }
 
+    public int getSweetness() {
+        return sweetness;
+    }
+
+    public void setSweetness(int sweetness) {
+        this.sweetness = sweetness;
+    }
+
     public void displayWeight(){
         System.out.println("weight = " + weight);
     }
@@ -42,6 +57,7 @@ public class Strawberry {
         return "Strawberry{" +
                 "weight=" + weight +
                 ", color='" + color + '\'' +
+                ", sweetness=" + sweetness +
                 '}';
     }
 }

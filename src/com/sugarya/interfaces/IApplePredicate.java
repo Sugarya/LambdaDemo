@@ -7,4 +7,5 @@ public interface IApplePredicate {
 
     boolean test(Apple apple);
 
+
 }

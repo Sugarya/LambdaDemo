@@ -1,7 +1,10 @@
 package com.sugarya;
 
+import com.sugarya.core.ApplePredicateImpl;
 import com.sugarya.interfaces.IApplePredicate;
 import com.sugarya.model.Apple;
+import com.sugarya.utils.Out;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.*;
@@ -28,6 +31,7 @@ public class ClientDevelopment {
 
 
     public static void main(String[] args) {
+
 
 
     }
@@ -155,7 +159,11 @@ public class ClientDevelopment {
      * lambda表达式
      */
     private static void testFilterApplesLambda() {
-        filterApples(RAW_APPLE_LIST, (Apple apple) -> "Green".equalsIgnoreCase(apple.getColor()) && 150 > apple.getWeight());
+        filterApples(RAW_APPLE_LIST, (Apple apple) -> {
+                    Out.println("do something");
+                    return "Green".equalsIgnoreCase(apple.getColor()) && 150 > apple.getWeight();
+                });
+
     }
 
     /**
