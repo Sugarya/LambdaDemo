@@ -1,6 +1,6 @@
 package com.sugarya.model;
 
-public class Strawberry {
+public class Strawberry extends Fruit {
 
     private int weight;
     private String color;

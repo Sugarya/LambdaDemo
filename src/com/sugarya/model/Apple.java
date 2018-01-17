@@ -1,9 +1,8 @@
 package com.sugarya.model;
 
-import java.awt.*;
 import java.util.Objects;
 
-public class Apple {
+public class Apple extends Fruit {
 
     private String color;
     private int weight;

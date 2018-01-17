@@ -14,6 +14,8 @@ import java.util.function.Function;
  */
 public class Practice2Client {
 
+    private int temp;
+
     private static List<Strawberry> RAW_STRAWBERRY_LIST = new ArrayList<>();
 
     static {
@@ -36,9 +38,16 @@ public class Practice2Client {
 
     private static void filterVersion1() {
         Strawberry strawberry = CollectionUtils.getMax(RAW_STRAWBERRY_LIST,
-                (Strawberry b1, Strawberry b2) -> b2.getWeight() - b1.getWeight());
+                (Strawberry b1, Strawberry b2) -> {return b2.getWeight() - b1.getWeight();});
         Out.println("我想吃最大的草莓是：");
         Out.println(strawberry.toString());
+
+        CollectionUtils.getMax(RAW_STRAWBERRY_LIST, new Comparator<Strawberry>() {
+            @Override
+            public int compare(Strawberry t1, Strawberry t2) {
+                return 0;
+            }
+        });
     }
 
     private static int getComparator(Strawberry b1, Strawberry b2) {
