@@ -1,5 +1,8 @@
 package com.sugarya.interfaces;
 
+import com.sugarya.model.Strawberry;
+
+import java.util.function.Function;
 import java.util.function.ToIntFunction;
 
 @FunctionalInterface
@@ -18,5 +21,6 @@ public interface Comparator<T> {
     default Comparator<T> thenCompare(ToIntFunction<T> function){
         return (T t1, T t2) -> compare(t1, t2) == 0 ? Comparator.comparing(function).compare(t1, t2) : compare(t1, t2);
     }
+
 
 }

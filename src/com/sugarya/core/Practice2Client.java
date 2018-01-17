@@ -1,6 +1,7 @@
 package com.sugarya.core;
 
 import com.sugarya.interfaces.Comparator;
+import com.sugarya.interfaces.Task;
 import com.sugarya.model.Strawberry;
 import com.sugarya.utils.CollectionUtils;
 import com.sugarya.utils.Out;
@@ -33,8 +34,12 @@ public class Practice2Client {
     }
 
     public static void main(String[] args) {
-        filterVersion1();
-//        filterVersion6();
+        CollectionUtils.getMax(RAW_STRAWBERRY_LIST, new Comparator<Strawberry>() {
+            @Override
+            public int compare(Strawberry t1, Strawberry t2) {
+                return 0;
+            }
+        });
     }
 
     private static void filterVersion1() {
@@ -70,7 +75,8 @@ public class Practice2Client {
      * 找到最甜的草莓
      */
     private static void filterVersion4() {
-        Strawberry strawberry = CollectionUtils.getMax(RAW_STRAWBERRY_LIST, comparing(Strawberry::getSweetness));
+        Strawberry strawberry = CollectionUtils.getMax(RAW_STRAWBERRY_LIST,
+                comparing(Strawberry::getSweetness));
         Out.println("我想吃最甜的草莓是：");
         Out.println(strawberry.toString());
     }
@@ -108,5 +114,7 @@ public class Practice2Client {
         Out.println("我想吃最甜的草莓是：");
         Out.println(strawberry.toString());
     }
+
+
 
 }
