@@ -1,4 +1,4 @@
-package com.sugarya.simplefactory;
+package com.sugarya.core.simplefactory;
 
 import com.sugarya.model.Apple;
 import com.sugarya.model.Fruit;

@@ -1,4 +1,4 @@
-package com.sugarya.chain;
+package com.sugarya.core.chain;
 
 import com.sugarya.utils.Out;
 

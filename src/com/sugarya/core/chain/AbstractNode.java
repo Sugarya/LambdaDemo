@@ -1,4 +1,4 @@
-package com.sugarya.chain;
+package com.sugarya.core.chain;
 
 public abstract class AbstractNode<T> {
 
@@ -12,8 +12,6 @@ public abstract class AbstractNode<T> {
         }
         return t;
     }
-
-
 
     public AbstractNode<T> getNextNode() {
         return nextNode;

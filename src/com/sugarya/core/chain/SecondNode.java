@@ -1,4 +1,4 @@
-package com.sugarya.chain;
+package com.sugarya.core.chain;
 
 public class SecondNode extends AbstractNode<String> {
 

@@ -1,4 +1,4 @@
-package com.sugarya.chain;
+package com.sugarya.core.chain;
 
 public class FirstNode extends AbstractNode<String> {
 

@@ -1,4 +1,4 @@
-package com.sugarya.template;
+package com.sugarya.core.template;
 
 import com.sugarya.utils.Out;
 

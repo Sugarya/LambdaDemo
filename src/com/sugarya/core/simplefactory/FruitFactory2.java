@@ -1,4 +1,4 @@
-package com.sugarya.simplefactory;
+package com.sugarya.core.simplefactory;
 
 import com.sugarya.model.Apple;
 import com.sugarya.model.Fruit;
@@ -22,6 +22,5 @@ public class FruitFactory2 {
         Objects.requireNonNull(fruitType);
         return (T)FRUIT_MAP.get(fruitType).get();
     }
-
 
 }
